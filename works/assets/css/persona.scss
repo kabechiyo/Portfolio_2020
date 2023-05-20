@@ -1,0 +1,110 @@
+@import "../../../assets/css/common.scss";
+.work-persona {
+  &-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 840px;
+    margin-bottom: 80px;
+    @media (max-width: $breakpoints_l) {
+      width: 100%;
+      flex-direction: column;
+      &.student {
+        margin-bottom: 80px;
+      }
+    }
+  }
+  &_profile {
+    &-container {
+      margin-right: 40px;
+      width: 24em;
+      &.left {
+        @media (min-width: $breakpoints_l) {
+          margin-right: 0;
+          margin-left: 40px;
+        }
+      }
+      @media (max-width: $breakpoints_l) {
+        display: flex;
+        width: 90%;
+        margin: 0 auto 24px auto;
+        order: 1;
+      }
+      @media (max-width: $breakpoints_m) {
+        flex-direction: column;
+        justify-content: center;
+        max-width: 480px;
+        width: 70%;
+      }
+      @media (max-width: $breakpoints_s) {
+        max-width: 340px;
+        width: 100%;
+      }
+    }
+    &-img {
+      &-container {
+        @media (max-width: $breakpoints_l) {
+          width: 100%;
+          height: auto;
+          text-align: right;
+        }
+      }
+      @media (max-width: $breakpoints_l) {
+        width: 100%;
+        height: auto;
+      }
+      @media (max-width: $breakpoints_m) {
+        max-width: 300px;
+        width: 80%;
+      }
+      @media (max-width: $breakpoints_s) {
+        max-width: 200px;
+        width: 100%;
+      }
+    }
+    &-text {
+      font-size: $text-size;
+      font-family: $font-jp_standard;
+      margin-bottom: 24px;
+      @media (max-width: $breakpoints_l) {
+        width: 32em;
+      }
+      @media (max-width: $breakpoints_s) {
+        padding: 0;
+        font-size: $caption-size;
+        margin-bottom: 8px;
+        max-width: 90%;
+        margin: 0 auto;
+      }
+    }
+  }
+  &_pain {
+    &-container {
+      width: 27em;
+      height: auto;
+      padding: 24px 40px;
+      background-color: $bg-gray;
+      box-sizing: border-box;
+      @media (max-width: $breakpoints_l) {
+        width: 70%;
+        margin: 0 auto;
+        order: 2;
+      }
+      @media (max-width: $breakpoints_s) {
+        width: 100%;
+        margin: 0 auto;
+        padding: 24px;
+      }
+    }
+    &-title {
+      margin-bottom: 16px;
+      font-size: $subheading-size;
+      font-family: $font-en_standard;
+    }
+    &-text {
+      font-size: $text-size;
+      font-family: $font-jp_standard;
+    }
+  }
+}

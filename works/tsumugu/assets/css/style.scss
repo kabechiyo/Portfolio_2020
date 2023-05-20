@@ -1,0 +1,134 @@
+// @import "../../../../assets/css/common.scss";
+@import "../../../../assets/css/setting.scss";
+@import "../../../assets/css/works-header.scss";
+$work-color: #D8B749;
+$work-color_selected: rgb(184, 152, 49);
+$work-text-color: #090a24;
+@import "../../../assets/css/persona.scss";
+.works-header_work-caption-container{
+    background-color: $work-color;
+    & h2,p{
+        color: $work-text-color;
+    }
+}
+.work-status{
+    border: solid 2px $work-color;
+    &_vertical-bar{
+        background-color: $work-color;
+    }
+}
+.production-flow-container{
+    border-top: solid 4px $work-color ;
+    @media (max-width: $breakpoints_s){
+        border: none;
+        border-left: 4px solid $work-color;
+    }
+}
+.work-header{
+    &-img{
+        width: 100%;
+        height: auto;
+        &-container{
+            width: 80%;
+            margin: 0 10% 40px 10%;
+        }
+    }
+    &_caption{
+        width: 30em;
+        margin: 0 auto;
+        text-align: left;
+        margin-bottom: 40px;
+        @media (max-width: $breakpoints_s){
+            width: 90%;
+        }
+    }
+}
+.logo{
+    &_caption{
+        max-width: 24em;
+        width: 90%;
+        margin-left: 80px;
+        @media (max-width: $breakpoints_m){
+            margin-left: 40px;
+        }
+        @media (max-width: $breakpoints_s){
+            margin: 0 auto;
+        }
+    }
+    &_img{
+        width: 100%;
+        height: auto;
+        &-container{
+            display: flex;
+            justify-content: space-around;
+            margin: 0 auto 40px auto;
+            width: 80%;
+            max-width: 840px;
+        }
+        &_wrapper{
+            width: 20%;
+            height: auto;
+        }
+    }
+    &_mindmap{
+        width: 100%;
+        height: auto;
+        &_container{
+            width: 40%;
+            @media (max-width: $breakpoints_s){
+                width: 100%;
+            }
+        }
+    }
+    &_roguh-img{
+        width: 100%;
+        height: auto;
+        &_container{
+            width: 60%;
+            @media (max-width: $breakpoints_s){
+                width: 100%;
+            }
+        }
+    }
+    &_rough_container{
+        width: 80%;
+        max-width: 840px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+        @media (max-width: $breakpoints_s){
+            flex-direction: column;
+        }
+    }
+}
+.portrait-illust_img{
+    width: 100%;
+    height: auto;
+    &_wrapper{
+        width: 25%;
+        height: auto;
+    }
+    &_container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+.story-illust_img{
+    width: 100%;
+    height: auto;
+    &_wrapper{
+        width: 45%;
+        height: auto;
+    }
+    &_container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 80px;
+        justify-content: space-between;
+    }
+}

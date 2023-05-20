@@ -1,0 +1,23 @@
+#header-img{
+    width: 90%;
+    height: auto;
+    margin: 50px 5% 50px 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.header-img{
+    width: 47%;
+    height: 47%;
+}
+#contents{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.summary{
+    margin: 40px;
+    margin-top: 0px;
+}
+#footer{
+    height: 100px;
+}

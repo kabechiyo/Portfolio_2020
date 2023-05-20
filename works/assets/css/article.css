@@ -1,0 +1,163 @@
+.article_container {
+  width: 668px;
+  max-width: 100%;
+  margin: auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.article_section {
+  margin-bottom: 80px;
+}
+
+.article_sub-section {
+  margin-bottom: 64px;
+}
+
+.article_title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.article_sub-title {
+  text-align: left;
+  font-size: 20px;
+  margin-top: 24px;
+  margin-bottom: 40px;
+  line-height: 1.2em;
+  display: flex;
+  align-items: center;
+}
+.article_sub-title::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  background-color: #ECBE56;
+  border-radius: 16px;
+}
+
+.article_sentence {
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.article_sentence_bold {
+  font-weight: bold;
+}
+
+.article_sentence_highlight {
+  background-color: #ECBE56;
+}
+
+.article_img-wrapper {
+  margin-top: 24px;
+  margin-bottom: 40px;
+  width: 100%;
+  height: auto;
+}
+
+.article_img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.article_hug-btn {
+  margin: 40px auto;
+  background-color: #ECBE56;
+  display: block;
+  padding: 4px 16px;
+  border-radius: 4px;
+}
+.article_hug-btn:hover {
+  background-color: #E09E3A;
+}
+.article_hug-btn:focus {
+  transition-delay: 0;
+  transition-duration: 0;
+  border: #333 2px solid;
+}
+.article_hug-btn:active {
+  transition-delay: 0;
+  transition-duration: 0;
+  border: #333 4px solid;
+}
+
+.article_hug-btn-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.article_hug-btn-text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.article_bulleted-list {
+  padding: 0 0 0 16px;
+  margin-bottom: 40px;
+}
+
+.article_bulleted-option {
+  font-size: 18px;
+  list-style-type: disc;
+  margin-bottom: 8px;
+}
+
+.article_numbered-list {
+  padding: 0 0 0 16px;
+  margin-bottom: 40px;
+}
+
+.article_numbered-option {
+  font-size: 18px;
+  list-style-type: decimal;
+  margin-bottom: 8px;
+}
+
+.article_5w1h-list {
+  padding: 0 0 0 16px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.article_5w1h-option {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  list-style-type: none;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.article_5w1h-option::before {
+  font-size: 12px;
+  font-weight: bold;
+  color: #7B7B7B;
+  padding-top: 1px;
+  width: 64px;
+}
+.article_5w1h-option.what::before {
+  content: "What";
+}
+.article_5w1h-option.when::before {
+  content: "When";
+}
+.article_5w1h-option.where::before {
+  content: "Where";
+}
+.article_5w1h-option.why::before {
+  content: "Why";
+}
+.article_5w1h-option.who::before {
+  content: "Who";
+}
+.article_5w1h-option.how::before {
+  content: "How";
+}/*# sourceMappingURL=article.css.map */

@@ -1,0 +1,31 @@
+#header-img{
+    width: 90%;
+    height: auto;
+    margin: 50px 0px 50px 0px;
+}
+#contents{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.summary{
+    margin: 40px;
+}
+#img-container{
+    width: 90%;
+    margin: 30px 5% 30px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#rough-img{
+    width: 35%;
+    height: 35%;
+}
+#prot-img{
+    width: 65%;
+    height: 65%;
+}
+#footer{
+    height: 100px;
+}

@@ -1,0 +1,176 @@
+@import "../../../assets/css/common.scss";
+$work-color: #ECBE56;
+$work-color_hover: #E09E3A;
+$spacer_l: 80px;
+$spacer_ml: 64px;
+$spacer_m: 40px;
+$spacer_s: 24px;
+
+// 記事部分
+.article_container{
+  width: 668px;
+  max-width: 100%;
+  margin: auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+// セクション
+.article_section{
+  margin-bottom: $spacer_l;
+}
+// サブセクション
+.article_sub-section{
+  margin-bottom: $spacer_ml;
+}
+// タイトル
+.article_title{
+  text-align: center;
+  font-size: $heading-size;
+  margin-bottom: $spacer_m;
+}
+// サブタイトル
+.article_sub-title{
+  text-align: left;
+  font-size: $title-size;
+  margin-top: $spacer_s;
+  margin-bottom: $spacer_m;
+  line-height: 1.2em;
+  display: flex;
+  align-items: center;
+  &::before{
+    content: "";
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    background-color: $work-color;
+    border-radius: 16px;
+  }
+}
+// 文章
+.article_sentence{
+  text-align: left;
+  font-size: $text-size;
+  line-height: 1.7;
+  margin-bottom: $spacer_m;
+}
+.article_sentence_bold{
+  font-weight: bold;
+}
+.article_sentence_highlight{
+  background-color: $work-color;
+}
+// 画像
+.article_img-wrapper{
+  margin-top: $spacer_s;
+  margin-bottom: $spacer_m;
+  width: 100%;
+  height: auto;
+}
+.article_img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+// 可変幅ボタン
+.article_hug-btn{
+  margin: $spacer_m auto;
+  background-color: $work-color;
+  display: block;
+  padding: 4px 16px;
+  border-radius: 4px;
+  &:hover{
+    background-color: $work-color_hover;
+  }
+  &:focus{
+    transition-delay: 0;
+    transition-duration: 0;
+    border: $black 2px solid;
+  }
+  &:active{
+    transition-delay: 0;
+    transition-duration: 0;
+    border: $black 4px solid;
+  }
+}
+.article_hug-btn-icon{
+  width: 20px;
+  height: 20px;
+}
+.article_hug-btn-text{
+  font-size: $btn-size;
+  font-weight: bold;
+}
+// 黒丸リスト
+.article_bulleted-list{
+  padding: 0 0 0 16px;
+  margin-bottom: $spacer_m;
+}
+.article_bulleted-option{
+  font-size: $text-size;
+  list-style-type: disc;
+  margin-bottom: 8px;
+}
+// 数字リスト
+.article_numbered-list{
+  padding: 0 0 0 16px;
+  margin-bottom: $spacer_m;
+}
+.article_numbered-option{
+  font-size: $text-size;
+  list-style-type: decimal;
+  margin-bottom: 8px;
+}
+// 5w1hリスト
+.article_5w1h-list{
+  padding: 0 0 0 16px;
+  margin-bottom: $spacer_m;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.article_5w1h-option{
+  display: flex;
+  align-items: center;
+  font-size: $text-size;
+  list-style-type: none;
+  margin-bottom: 8px;
+  text-align: center;
+  &::before{
+    font-size: $caption-size_en;
+    font-weight: bold;
+    color: $text-dark;
+    padding-top: 1px;
+    width: 64px;
+  }
+  &.what{
+    &::before{
+      content: "What";
+    }
+  }
+  &.when{
+    &::before{
+      content: "When";
+    }
+  }
+  &.where{
+    &::before{
+      content: "Where";
+    }
+  }
+  &.why{
+    &::before{
+      content: "Why";
+    }
+  }
+  &.who{
+    &::before{
+      content: "Who";
+    }
+  }
+  &.how{
+    &::before{
+      content: "How";
+    }
+  }
+}

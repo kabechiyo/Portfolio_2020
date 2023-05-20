@@ -1,0 +1,68 @@
+// Breakpoint
+$breakpoints_l: 1024px;
+$breakpoints_m: 894px;
+$breakpoints_s: 480px;
+
+// Color
+$background-color: #fff;
+$white: #fff;
+$bg-gray: #f4f4f4;
+$bg-gray_hover: #E8E8E8;
+$primary-yellow: #ECBE56;
+$primary-yellow_background: rgba(236, 191, 86, 0.699);
+$primary-yellow_hover: #E09E3A;
+$primary-navy: #2f2f4a;
+$black: #333;
+$text-dark: #7B7B7B;
+$text-gray: rgb(103, 103, 103);
+$border-color: rgba(154, 154, 154, 0.3);
+
+// Size
+$globalNav-width: 160px;
+$globalNav-height: 60px;
+$btn-size: 18px;
+
+// Font size JP
+$hero-size: 56px;
+$display2-size: 48px;
+$display1-size: 32px;
+$heading-size: 28px;
+$subheading-size: 24px;
+$title-size: 20px;
+$text-size: 18px;
+$caption-size: 14px;
+
+// Font size EN
+$hero-size_en: 56px;
+$display2-size_en: 48px;
+$display1-size_en: 32px;
+$heading-size_en: 28px;
+$subheading-size_en: 24px;
+$title-size_en: 20px;
+$text-size_en: 16px;
+$caption-size_en: 12px;
+
+// Font family
+$font-en_standard: 'Amiko', sans-serif;
+$font-en_decoration: 'Amiko', serif;
+$font-jp_standard: dnp-shuei-gothic-gin-std, sans-serif;
+$font-jp_decoration: dnp-shuei-gothic-gin-std, sans-serif;
+$margin-mainContents: 160px;
+@media (max-width: $breakpoints_m){
+  $margin-mainContents: 120px;
+}
+@media (max-width: $breakpoints_s){
+  $margin-mainContents: 80px;
+}
+$margin-subContents: 80px;
+$margin-mainTitle: 40px;
+@media (max-width: $breakpoints_m){
+  $hero-size: 28px;
+  $display2-size: 28px;
+  $display1-size: 24px;
+  $title-size: 24px;
+  $heading-size: 24px;
+  $subheading-size: 20px;
+  $text-size: 16px;
+  $caption-size: 14px;
+}

@@ -1,0 +1,151 @@
+@import "common.scss";
+@import "loading.scss";
+*{
+  vertical-align: baseline;
+  margin: 0;
+  transition: all 500ms 0s ease;
+}
+
+body {
+  margin: 0;
+  background-color: $background-color;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+p{
+  font-size: $text-size;
+  font-family: $font-jp_standard;
+  line-height: 1.8em;
+  color: $black;
+  &::selection {
+    background-color: $primary-yellow;
+    color: $primary-navy;
+  }
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: $font-jp_standard;
+  &::selection {
+    background-color: $primary-yellow;
+    color: $primary-navy;
+  }
+}
+
+button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: $font-en_standard;
+  &:focus {
+    outline:0;
+  }
+}
+
+ul{
+  padding: 0;
+}
+
+li{
+  font-size: $text-size;
+  font-family: $font-jp_standard;
+  list-style: none;
+  &::selection {
+    background-color: $primary-yellow;
+    color: $primary-navy;
+  }
+}
+
+a{
+  &:link {
+    color: $black;
+    text-decoration: none;
+  }
+  &:visited {
+    color: $black;
+  }
+  &:hover {
+    color: $black;
+  }
+  &:active {
+    color: $black;
+  }
+}
+
+header{
+  width: 100%;
+}
+
+.global-nav{
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: $globalNav-width - 20px;
+  height: 100vh;
+  background-color: $background-color;
+  border-right: $primary-yellow 4px solid;
+  transition: all 200ms 0s ease;
+  padding: {
+    left: 16px;
+    top: 32px;
+  }
+
+  @media (max-width: $breakpoints_m){
+    width: 100vw;
+    height: $globalNav-height;
+    box-sizing: border-box;
+    padding: 4px 20px 0 20px;
+    border-right: none;
+    border-bottom: $primary-yellow 4px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &_logo{
+    cursor: pointer;
+    width: 88px;
+    height: auto;
+    margin-bottom: 24px;
+    padding-left: 8px;
+    @media (max-width: $breakpoints_m){
+      width: 44px;
+      height: auto;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &_link-top-container{
+    padding-left: 12px;
+    @media (max-width: $breakpoints_m){
+      display: flex;
+      margin: auto 0;
+    }
+  }
+
+  &_link{
+    color: $black;
+    font-size: $title-size;
+    font-family: $font-en_standard;
+    font-weight: bold;
+    margin-bottom: 8px;
+    &:hover{
+      background-color: $primary-yellow;
+    }
+    @media (max-width: $breakpoints_m){
+      &:not(:last-child) {
+      margin: 0 16px 0 0;
+      }
+    }
+  }
+}
+
+main{
+  padding-left: $globalNav-width;
+  width: calc(100% - 160px);
+  @media (max-width: $breakpoints_m){
+  padding: 0;
+  width: 100%;
+  }
+}

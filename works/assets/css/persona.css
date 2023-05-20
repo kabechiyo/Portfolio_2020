@@ -1,0 +1,123 @@
+.work-persona-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 840px;
+  margin-bottom: 80px;
+}
+@media (max-width: 1024px) {
+  .work-persona-container {
+    width: 100%;
+    flex-direction: column;
+  }
+  .work-persona-container.student {
+    margin-bottom: 80px;
+  }
+}
+.work-persona_profile-container {
+  margin-right: 40px;
+  width: 24em;
+}
+@media (min-width: 1024px) {
+  .work-persona_profile-container.left {
+    margin-right: 0;
+    margin-left: 40px;
+  }
+}
+@media (max-width: 1024px) {
+  .work-persona_profile-container {
+    display: flex;
+    width: 90%;
+    margin: 0 auto 24px auto;
+    order: 1;
+  }
+}
+@media (max-width: 894px) {
+  .work-persona_profile-container {
+    flex-direction: column;
+    justify-content: center;
+    max-width: 480px;
+    width: 70%;
+  }
+}
+@media (max-width: 480px) {
+  .work-persona_profile-container {
+    max-width: 340px;
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .work-persona_profile-img-container {
+    width: 100%;
+    height: auto;
+    text-align: right;
+  }
+}
+@media (max-width: 1024px) {
+  .work-persona_profile-img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 894px) {
+  .work-persona_profile-img {
+    max-width: 300px;
+    width: 80%;
+  }
+}
+@media (max-width: 480px) {
+  .work-persona_profile-img {
+    max-width: 200px;
+    width: 100%;
+  }
+}
+.work-persona_profile-text {
+  font-size: 18px;
+  font-family: dnp-shuei-gothic-gin-std, sans-serif;
+  margin-bottom: 24px;
+}
+@media (max-width: 1024px) {
+  .work-persona_profile-text {
+    width: 32em;
+  }
+}
+@media (max-width: 480px) {
+  .work-persona_profile-text {
+    padding: 0;
+    font-size: 14px;
+    margin-bottom: 8px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+.work-persona_pain-container {
+  width: 27em;
+  height: auto;
+  padding: 24px 40px;
+  background-color: #f4f4f4;
+  box-sizing: border-box;
+}
+@media (max-width: 1024px) {
+  .work-persona_pain-container {
+    width: 70%;
+    margin: 0 auto;
+    order: 2;
+  }
+}
+@media (max-width: 480px) {
+  .work-persona_pain-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 24px;
+  }
+}
+.work-persona_pain-title {
+  margin-bottom: 16px;
+  font-size: 24px;
+  font-family: "Amiko", sans-serif;
+}
+.work-persona_pain-text {
+  font-size: 18px;
+  font-family: dnp-shuei-gothic-gin-std, sans-serif;
+}/*# sourceMappingURL=persona.css.map */

@@ -1,0 +1,33 @@
+#header-img{
+    width: 90%;
+    height: auto;
+    margin: 50px 0px 50px 0px;
+}
+#contents{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.summary{
+    margin: 40px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+}
+.ex-img{
+    margin: 30px;
+    width: 60%;
+}
+.game-container{
+    display: flex;
+    justify-content: space-around; 
+    margin-top: 40px;
+}
+.game-img{
+    width: 47%;
+}
+#footer{
+    height: 100px;
+}

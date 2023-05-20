@@ -1,0 +1,239 @@
+@import "../../../assets/css/common.scss";
+$work-color: #F4AE45;
+$work-color_hover: #FE9C42;
+
+.header{
+  position: relative;
+  box-sizing: border-box;
+  top: 0;
+  right: 0;
+  left: $globalNav-width;
+  max-width: 1200px;
+  @media (max-width: $breakpoints_m){
+    margin-top: 120px;
+    left: 0;
+  }
+  // サイズ調整
+  width: calc(100% - 160px);// グローバルナビの分の調整
+  @media (max-width: $breakpoints_l){
+    height: auto;
+    padding: 0;
+  }
+  @media (max-width: $breakpoints_m){
+    width: 100%;
+    padding: 0 24px;
+  }
+  // 下スペース
+  margin-bottom: 120px;
+  @media (max-width: $breakpoints_m){
+    margin-bottom: 80px;
+  }
+  @media (max-width: $breakpoints_s){
+    margin-bottom: 40px;
+  }
+}
+
+// 画像
+.header_img-wrapper{
+  width: 824px;
+  height: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  @media (max-width: 1260px){
+    width: 720px;
+    max-width: 100%;
+    position: relative;
+    margin: 0 auto 80px auto;
+  }
+}
+.header_img{
+  width: 100%;
+  height: auto;
+}
+
+.header_about-container{
+  position: relative;
+  padding-top: 120px;
+  margin: 0 auto 160px 108px;
+  z-index: 10;
+  @media (max-width: 1260px){
+    width: 720px;
+    max-width: 100%;
+    padding: 0;
+    margin: 80px auto 24px auto;
+  }
+}
+.header_title{
+  font-size: $display1-size;
+  font-weight: bold;
+  background-color: $white;
+  display: inline-block;
+  line-height: 1em;
+  padding: 4px 8px;
+  margin-bottom: 16px;
+}
+
+.header_genre-list{
+  display: flex;
+  padding-left: 8px;
+}
+.header_genre-option{
+  font-weight: bold;
+  margin-right: 12px;
+  background-color: $white;
+  display: inline-block;
+  line-height: 1em;
+  padding: 4px 8px;
+}
+
+.header_info-container{
+  position: relative;
+  // display: inline-block;
+  margin-left: 108px;
+  background-color: $bg-gray;
+  width: 528px;
+  padding: 40px 60px;
+  box-sizing: border-box;
+  z-index: 10;
+  @media (max-width: 1260px){
+    margin: auto;
+    max-width: 100%;
+    padding: 24px 40px;
+  }
+}
+.header_concept{
+  font-size: $subheading-size;
+  line-height: 1.4em;
+  font-weight: bold;
+  width: 480px;
+  max-width: 100%;
+  margin-bottom: 16px;
+}
+.header_sentence{
+  width: 480px;
+  max-width: 100%;
+}
+
+.basic-info_container{
+  margin-bottom: 80px;
+  @media (max-width: 1260px){
+    max-width: 100%;
+    padding: 24px 40px;
+  }
+}
+
+.basic-info_list{
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  margin: auto auto 80px auto;
+  @media (max-width: $breakpoints_l){
+    // 基本データを縦並びにする
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.basic-info_option{
+  display: flex;
+  align-items: center;
+}
+.basic-info_separator{
+  height: 28px;
+  width: 2px;
+  background-color: $work-color;
+  margin: auto 24px;
+  @media (max-width: $breakpoints_l){
+    height: 8px;
+    width: 8px;
+    border-radius: 8px;
+    margin: 16px auto;
+  }
+}
+.basic-info_title{
+  font-size: $text-size_en;
+  margin-right: 16px;
+}
+.basic-info_text{
+  font-size: $text-size_en;
+}
+
+.table-of-contents_list{
+  background-color: $bg-gray;
+  width: 440px;
+  max-width: 100%;
+  padding: 20px;
+  margin: auto auto 80px auto;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.table-of-contents_option{
+  display: flex;
+  border-radius: 2px;
+  padding: 4px 16px;
+  &:not(:last-child){
+    margin-bottom: 2px;
+  }
+  &:hover{
+    background-color: $bg-gray_hover;
+  }
+}
+.table-of-contents_link{
+  width: 100%;
+  height: 100%;
+}
+.table-of-contents_text{
+  width: 100%;
+  height: 100%;
+  color: $text-gray;
+  font-size: $text-size;
+  &:hover{
+    color: $black;
+    font-weight: bold;
+  }
+}
+
+.work-flow_title{
+  font-size: $heading-size;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.work-flow_list{
+  margin: auto;
+  padding: 0;
+  width: 668px;
+  max-width: 100%;
+}
+.work-flow_option{
+  margin-bottom: 40px;
+}
+.work-flow_row{
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.work-flow_row::before{
+  content: "";
+  margin: 6px 16px 6px 6px;
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  background-color: $work-color;
+  display: inline-block;
+}
+.work-flow_process{
+  font-size: $title-size;
+  font-weight: bold;
+  margin-right: 16px;
+}
+.work-flow_period{
+  font-size: $text-size_en;
+  font-weight: bold;
+  color: $text-dark;
+}
+.work-flow_text{
+  padding-left: 38px;
+  box-sizing: border-box;
+}

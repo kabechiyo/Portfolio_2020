@@ -1,0 +1,353 @@
+// @import "../../../../assets/css/common.scss";
+@import "../../../../assets/css/setting.scss";
+@import "../../../assets/css/works-header.scss";
+$work-color: #ECBE56;
+$work-color_selected: rgb(184, 144, 53);
+$work-text-color: #333;
+.works-header_work-caption-container{
+    background-color: $work-color;
+    & h2,p{
+        color: $work-text-color;
+    }
+}
+.work-status{
+    border: solid 2px $work-color;
+    &_vertical-bar{
+        background-color: $work-color;
+    }
+}
+.production-flow-container{
+    border-top: solid 4px $work-color ;
+    @media (max-width: $breakpoints_s){
+        border: none;
+        border-left: 4px solid $work-color;
+    }
+}
+.work-header{
+    &-img{
+        width: 100%;
+        height: auto;
+        &-container{
+            width: 80%;
+            margin: 0 10% 40px 10%;
+        }
+    }
+    &_caption{
+        width: 30em;
+        margin: 0 auto;
+        text-align: left;
+        margin-bottom: 40px;
+        @media (max-width: $breakpoints_s){
+            width: 90%;
+        }
+    }
+}
+
+.logodesign{
+    &_subtitle{
+        font-size: $subheading-size;
+        font-family: $font-jp_decoration;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    &_illustration{
+        &-container{
+            // display: flex;
+            // justify-content: center;
+            margin-bottom: 100px;
+            @media (max-width: $breakpoints_l){
+                // padding: 0 40px;
+            }
+            @media (max-width: $breakpoints_s){
+                // flex-direction: column;
+                // align-items: center;
+            }
+        }
+        &-img{
+            width: 24%;
+            padding: 20px;
+            box-sizing: border-box;
+            height: auto;
+            // margin-bottom: 40px;
+            @media (max-width: $breakpoints_m){
+                padding: 8px;
+            }
+            &_container{
+                width: 560px;
+                max-width: 90%;
+                margin: 0 auto 12px auto;
+                display: flex;
+                align-items: center;
+            }
+        }
+        &-plus-img-container{
+            width: 14%;
+            padding: 21px 20px 19px 20px;
+            box-sizing: border-box;
+            height: auto;
+            // margin: auto 24px 200px 24px;
+            @media (max-width: $breakpoints_m){
+                padding: 12px;
+            }
+            @media (max-width: $breakpoints_s){
+                padding: 8px;
+            }
+        }
+        &-text_container{
+            display: flex;
+            width: 560px;
+            max-width: 90%;
+            margin: 0 auto 20px auto;
+            justify-content: space-between;
+        }
+        &-parts{
+            width: 24%;
+            text-align: center;
+        }
+        &-title{
+            display: inline-block;
+            font-size: $heading-size;
+            font-family: $font-jp_decoration;
+            background-color: $primary-yellow;
+            line-height: 1.2em;
+            padding: 0 0.5em;
+            margin-bottom: 20px;
+            @media (max-width: $breakpoints_m){
+                font-size: $text-size;
+            }
+        }
+        &-text{
+            font-size: $text-size;
+            font-family: $font-jp_standard;
+            line-height: 1.7em;
+            width: 90%;
+            max-width: 30em;
+            margin: 0 auto;
+            text-align: justify;
+        }
+    }
+    &_mindmap{
+        &-container{
+            display: flex;
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 80px;
+            @media (max-width: $breakpoints_s){
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        &-img{
+            &-container{
+                width: 60%;
+                @media (max-width: $breakpoints_s){
+                    width: 90%;
+                }
+            }
+            width: 100%;
+            height: auto;
+        }
+        &-text{
+            width: 40%;
+            @media (max-width: $breakpoints_s){
+                width: 90%;
+            }
+        }
+    }
+    &_prot{
+        &-text{
+            width: 24em;
+            margin: 0 auto 24px 0;
+            @media (max-width: $breakpoints_s){
+                width: 90%;
+                margin: 0 auto 24px auto;
+            }
+        }
+        &-img{
+            &-container{
+                display: flex;
+                justify-content: space-around;
+                background-color: $bg-gray;
+                padding: 40px 5%;
+                margin-bottom: 80px;
+            }
+            width: 20%;
+            height: auto;
+        }
+    }
+    &_process-img{
+        widows: 100%;
+        height: auto;
+        &-container{
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+}
+.webdesign{
+    &_caption{
+        text-align: left;
+        width: 100%;
+        color: $primary-navy;
+        font-family: $font-jp_standard;
+        font-size: $caption-size;
+        margin-bottom: 40px;
+        color: $text-gray;
+    }
+    &_subtitle{
+        font-size: $subheading-size;
+        font-family: $font-jp_decoration;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    &_show-web-btn{
+        &-container{
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        cursor: pointer;
+        background-color: $primary-yellow;
+        border-radius: 4px;
+        font-size: $text-size;
+        font-weight: bold;
+        height: 44px;
+        padding: 0 16px;
+        &:hover{
+            background-color: $primary-yellow_hover;
+        }
+    }
+    &_img{
+        border: solid 2px $primary-navy;
+        width: 100%;
+        height: auto;
+        &-section{
+            margin: 0 auto;
+            display: flex;
+            width: 840px;
+            max-width: 90%;
+            justify-content: space-between;
+        }
+        &-container{
+            width: 400px;
+            max-width: 48%;
+            margin-bottom: 80px;
+        }
+    }
+    &_wp{
+        &-section{
+            display: flex;
+            margin-bottom: 80px;
+            @media (max-width: $breakpoints_l){
+                flex-direction: column;
+                width: 90%;
+                margin: 0 auto 40px auto;
+                padding: 0;
+            }
+        }
+        &-text{
+            width: 30%;
+            margin-right: 5%;
+            @media (max-width: $breakpoints_l){
+                width: 100%;
+                max-width: 30em;
+                margin-bottom: 24px;
+                order: 1;
+            }
+        }
+        &-img{
+            width: 100%;
+            height: auto;
+            border: solid 2px $primary-navy;
+            &-wrapper{
+                width: 48%;
+            }
+            &-container{
+                background-color: $bg-gray;
+                width: 65%;
+                padding: 40px;
+                display: flex;
+                justify-content: space-between;
+                @media (max-width: $breakpoints_l){
+                    width: 100%;
+                    padding: 20px;
+                    box-sizing: border-box;
+                    order: 2;
+                }
+            }
+        }
+    }
+    &_wf{
+        &-section{
+            display: flex;
+            @media (max-width: $breakpoints_l){
+                flex-direction: column;
+                width: 90%;
+                margin: 0 auto;
+                padding: 0;
+            }
+        }
+        &-text{
+            width: 30%;
+            @media (max-width: $breakpoints_l){
+                width: 100%;
+                max-width: 30em;
+                margin-bottom: 24px;
+                order: 1;
+            }
+        }
+        &-img{
+            width: 100%;
+            height: auto;
+            border: solid 2px $primary-navy;
+            &-wrapper{
+                width: 48%;
+            }
+            &-container{
+                background-color: $bg-gray;
+                width: 65%;
+                margin-right: 5%;
+                padding: 40px;
+                display: flex;
+                justify-content: space-between;
+                @media (max-width: $breakpoints_l){
+                    width: 100%;
+                    padding: 20px;
+                    box-sizing: border-box;
+                    order: 2;
+                }
+            }
+        }
+    }
+}
+.businesscard_prot{
+    &-section{
+        background-color: $bg-gray;
+        padding: 56px;
+        @media (max-width: $breakpoints_s){
+            padding: 20px;
+        }
+    }
+    &-box{
+        display: flex;
+        &.vertical{
+            margin-bottom: 40px;
+            justify-content: space-between;
+        }
+        &.horizontal{
+            justify-content: space-around;
+        }
+    }
+    &-img{
+        width: 100%;
+        height: auto;
+        border: solid 1px $primary-navy;
+        &-container{
+            &.vertical{
+                width: 22%;
+            }
+            &.horizontal{
+                width: 40%;
+            }
+        }
+    }
+}
