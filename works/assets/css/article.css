@@ -44,6 +44,9 @@
   line-height: 1.7;
   margin-bottom: 40px;
 }
+.article_sentence p + p {
+  margin-top: 8px;
+}
 
 .article_sentence_bold {
   font-weight: bold;
@@ -121,7 +124,7 @@
 }
 
 .article_5w1h-list {
-  padding: 0 0 0 16px;
+  padding: 0;
   margin-bottom: 40px;
   display: flex;
   align-items: flex-start;

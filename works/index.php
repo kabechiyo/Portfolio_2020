@@ -47,16 +47,16 @@
           <img class="work-img" src="assets/img/penne.jpg" alt="">
           <div>
             <h2 class="work-title">Penne</h2>
-            <h3 class="work-genre">UX/UIdesign</h3>
+            <h3 class="work-genre">UIデザイン</h3>
           </div>
         </a>
       </li>
       <li class="work-container">
         <a href="./coveat/">
-          <img class="work-img" src="assets/img/coveat.jpg" alt="">
+          <img class="work-img" src="assets/img/coveat.png" alt="">
           <div>
-            <h2 class="work-title">coveat</h2>
-            <h3 class="work-genre">UIdesign サービスデザイン コーディング</h3>
+            <h2 class="work-title">covEAT</h2>
+            <h3 class="work-genre">UIデザイン サービスデザイン コーディング</h3>
           </div>
         </a>
       </li>
@@ -78,7 +78,25 @@
           </div>
         </a>
       </li>
-</ol>
+      <li class="work-container">
+        <a href="./uniwork/">
+          <img class="work-img" src="assets/img/uniwork.jpg" alt="">
+          <div>
+            <h2 class="work-title">uniwork</h2>
+            <h3 class="work-genre">UIデザイン サービスデザイン</h3>
+          </div>
+        </a>
+      </li>
+      <li class="work-container">
+        <a href="./kosuzume/">
+          <img class="work-img" src="assets/img/kosuzume.jpg" alt="">
+          <div>
+            <h2 class="work-title">kosuzume</h2>
+            <h3 class="work-genre">グラフィック</h3>
+          </div>
+        </a>
+      </li>
+    </ol>
 	</main>
 	<footer></footer>
 	<script>

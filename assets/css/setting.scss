@@ -19,16 +19,16 @@ p{
   line-height: 1.8em;
   color: $black;
   &::selection {
-    background-color: $primary-yellow;
-    color: $primary-navy;
+  background-color: $primary-yellow;
+  color: $primary-navy;
   }
 }
 
 h1,h2,h3,h4,h5,h6{
   font-family: $font-jp_standard;
   &::selection {
-    background-color: $primary-yellow;
-    color: $primary-navy;
+  background-color: $primary-yellow;
+  color: $primary-navy;
   }
 }
 
@@ -38,7 +38,7 @@ button{
   cursor: pointer;
   font-family: $font-en_standard;
   &:focus {
-    outline:0;
+  outline:0;
   }
 }
 
@@ -51,29 +51,25 @@ li{
   font-family: $font-jp_standard;
   list-style: none;
   &::selection {
-    background-color: $primary-yellow;
-    color: $primary-navy;
+  background-color: $primary-yellow;
+  color: $primary-navy;
   }
 }
 
 a{
   &:link {
-    color: $black;
-    text-decoration: none;
+  color: $black;
+  text-decoration: none;
   }
   &:visited {
-    color: $black;
+  color: $black;
   }
   &:hover {
-    color: $black;
+  color: $black;
   }
   &:active {
-    color: $black;
+  color: $black;
   }
-}
-
-header{
-  width: 100%;
 }
 
 .global-nav{
@@ -83,8 +79,7 @@ header{
   left: 0;
   width: $globalNav-width - 20px;
   height: 100vh;
-  background-color: $background-color;
-  border-right: $primary-yellow 4px solid;
+  background-color: $bg-gray;
   transition: all 200ms 0s ease;
   padding: {
     left: 16px;
@@ -96,8 +91,6 @@ header{
     height: $globalNav-height;
     box-sizing: border-box;
     padding: 4px 20px 0 20px;
-    border-right: none;
-    border-bottom: $primary-yellow 4px solid;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -117,27 +110,30 @@ header{
   }
 
   &_link-top-container{
+    display: flex;
     padding-left: 12px;
+    gap: 16px;
+    flex-direction: column;
     @media (max-width: $breakpoints_m){
-      display: flex;
+      flex-direction: row;
       margin: auto 0;
     }
   }
 
   &_link{
-    color: $black;
-    font-size: $title-size;
-    font-family: $font-en_standard;
-    font-weight: bold;
-    margin-bottom: 8px;
-    &:hover{
-      background-color: $primary-yellow;
-    }
-    @media (max-width: $breakpoints_m){
-      &:not(:last-child) {
+  color: $black;
+  font-size: $title-size;
+  font-family: $font-en_standard;
+  font-weight: bold;
+  margin-bottom: 8px;
+  &:hover{
+    background-color: $primary-yellow;
+  }
+  @media (max-width: $breakpoints_m){
+    &:not(:last-child) {
       margin: 0 16px 0 0;
-      }
     }
+  }
   }
 }
 

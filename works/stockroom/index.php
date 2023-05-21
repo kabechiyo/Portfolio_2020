@@ -42,7 +42,9 @@
       <!-- 説明文 -->
       <section class="header_info-container">
         <h2 class="header_concept">ひらめきを一元化するネタ帳アプリ</h2>
-        <p class="header_sentence">STOCKROOMは様々なアイデアを一元化して保存するためのネタ帳アプリです。様々な場面で企画やアイデア出しを行う中で議事録やノートツール、メモ帳に思いついたものが散乱してしまうのを課題に感じていました。そこで、「ひらめき」を一元化できるネタ帳アプリを考案し制作を行いました。</p>
+        <p class="header_sentence">STOCKROOMは様々なアイデアを一元化して保存するためのネタ帳アプリです。</p>
+        <p class="header_sentence">様々な場面で企画やアイデア出しを行う中で議事録やノートツール、メモ帳に思いついたものが散乱してしまうのを課題に感じていました。</p>
+        <p class="header_sentence">そこで、「ひらめき」を一元化できるネタ帳アプリを考案し制作を行いました。</p>
       </section>
     </section>
   </header>
@@ -123,7 +125,12 @@
       <a id="サービス概要" name="サービス概要"></a>
       <section class="article_section">
         <h3 class="article_title">サービス概要</h3>
-        <p class="article_sentence">STOCKROOMは様々なアイデアを一元化して保存するためのネタ帳アプリです。<br>エンジニアと二人で半年間で制作し、私は主にUIデザインとフロントエンドを担当しました。</p>
+        <div class="article_sentence">
+          <p>
+            STOCKROOMは様々なアイデアを一元化して保存するためのネタ帳アプリです。
+          </p>
+          <p>エンジニアと二人で半年間で制作し、私は主にUIデザインとフロントエンドを担当しました。</p>
+        </div>
         <h4 class="article_sub-title">STOCKROOMの特徴</h4>
         <ol class="article_numbered-list">
           <li class="article_numbered-option">思いついた瞬間にひらめきを記録できる</li>
@@ -136,7 +143,17 @@
 
       <section class="article_section">
         <h3 class="article_title">サービス設計</h3>
-        <p class="article_sentence">当時ハッカソンや卒業研究など場面で様々なアイデア出しを行っていて、思いついたアイデアが議事録やメモ帳、ノートツールに散乱してしまっていることに課題を感じていました。<br>「あの時思いついたあのアイデア、こっちのプロジェクトと掛け合わせたら良い感じになりそうだけど詳細が思い出せない」<br>「前に良い企画思いついたのに忘れちゃった」<br>そんな状況で、企画のアイデアややりたいことといったいつか役に立ちそうな「ひらめき」を一箇所にまとめてストックしておけたら新たな創造の役に立つのではないかと思い、サービスを設計しました。</p>
+        <div class="article_sentence">
+          <p>
+            当時ハッカソンや卒業研究など場面で様々なアイデア出しを行っていて、思いついたアイデアが議事録やメモ帳、ノートツールに散乱してしまっていることに課題を感じていました。
+          </p>
+          <p>
+            「あの時思いついたあのアイデア、こっちのプロジェクトと掛け合わせたら良い感じになりそうだけど詳細が思い出せない」「前に良い企画思いついたのに忘れちゃった」
+          </p>
+          <p>
+            そんな状況で、企画のアイデアややりたいことといったいつか役に立ちそうな「ひらめき」を一箇所にまとめてストックしておけたら新たな創造の役に立つのではないかと思い、サービスを設計しました。
+          </p>
+        </div>
       </section>
 
       <a id="UIデザイン" name="UIデザイン"></a>
@@ -146,7 +163,14 @@
 
         <section class="article_sub-section">
           <h4 class="article_sub-title">ひらめきを見る</h4>
-          <p class="article_sentence">ホーム画面では追加したひらめきを一覧で表示します。表示はギャラリー型とリスト型で切り替えることができます。<br>ひらめきに設定したひらめき度や追加した日時で並べ替えることもできます。</p>
+          <div class="article_sentence">
+            <p>
+              ホーム画面では追加したひらめきを一覧で表示します。表示はギャラリー型とリスト型で切り替えることができます。
+            </p>
+            <p>
+              ひらめきに設定したひらめき度や追加した日時で並べ替えることもできます。
+            </p>
+          </div>
           <p class="article_img-wrapper">
             <img class="article_img" src="assets/img/ui01.png" alt="">
           </p>
@@ -168,7 +192,7 @@
           </p>
         </section>
 
-        <button class="article_hug-btn" type="button" onclick="location.href='https://www.figma.com/file/qHRAVlk9zDJW1emWVPbDwf/STOCKROOM_%E5%85%AC%E9%96%8B%E7%94%A8?node-id=0%3A1'">
+        <button class="article_hug-btn" type="button" target="_blank" onclick="location.href='https://www.figma.com/file/qHRAVlk9zDJW1emWVPbDwf/STOCKROOM_%E5%85%AC%E9%96%8B%E7%94%A8?node-id=0%3A1'">
           <p class="article_hug-btn-text">Figmaでデザインデータを見る</p>
         </button>
       </section>
@@ -185,7 +209,14 @@
       <a id="LPデザイン" name="LPデザイン"></a>
       <section class="article_section">
         <h3 class="article_title">LPデザイン</h3>
-        <p class="article_sentence">サービス公開にあたり、LPのデザインと実装を行いました。<br>LPに使用するイラストはProcreateとIllustratorを用いて作成しています。</p>
+        <div class="article_sentence">
+          <p>
+            サービス公開にあたり、LPのデザインと実装を行いました。
+          </p>
+          <p>
+            LPに使用するイラストはProcreateとIllustratorを用いて作成しています。
+          </p>
+        </div>
         <p class="article_img-wrapper">
           <img class="article_img" src="assets/img/lp01.png" alt="">
         </p>
@@ -200,7 +231,17 @@
       <a id="ロゴデザイン" name="ロゴデザイン"></a>
       <section class="article_section">
         <h3 class="article_title">ロゴデザイン</h3>
-        <p class="article_sentence">サービス公開にあたり、ロゴデザインを作成しました。<br>「ひらめき」から電球を連想、ストックしている様子から「リスト」を連想し、二つのモチーフを掛け合わせています。<br>ロゴタイプはポップで丸みを帯びたもの採用し、「ひらめきを思いついた喜び」「気軽なストック」をイメージしています。</p>
+        <div class="article_sentence">
+          <p>
+            サービス公開にあたり、ロゴデザインを作成しました。
+          </p>
+          <p>
+            「ひらめき」から電球を連想、ストックしている様子から「リスト」を連想し、二つのモチーフを掛け合わせています。
+          </p>
+          <p>
+            ロゴタイプはポップで丸みを帯びたもの採用し、「ひらめきを思いついた喜び」「気軽なストック」をイメージしています。
+          </p>
+        </div>
         <p class="article_img-wrapper">
           <img class="article_img" src="assets/img/logo01.png" alt="">
         </p>
