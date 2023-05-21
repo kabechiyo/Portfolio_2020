@@ -65,8 +65,8 @@
             <div class="top-works_title-box">
               <h3 class="top-works_title">STOCKROOM</h3>
               <ul class="top-works_genre">
-                <li class="top-works_genre-option">UI Design</li>
-                <li class="top-works_genre-option">Service Design</li>
+                <li class="top-works_genre-option">UIデザイン</li>
+                <li class="top-works_genre-option">サービスデザイン</li>
               </ul>
             </div>
             <section class="top-works_summary">
