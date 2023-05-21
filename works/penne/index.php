@@ -149,28 +149,28 @@
           <h4 class="article_sub-title">01 情報のまとまりを作る</h4>
           <p class="article_sentence">Penneはノートの中身を「ブロック」で管理します。これにより、ノートを取りながら「情報のまとまり」を意識することができます。</p>
           <p class="article_img-wrapper">
-            <img class="article_img" src="assets/img/design01.png" alt="">
+            <img width="240" class="article_img" src="assets/img/ux-flow01.svg" alt="">
           </p>
         </section>
         <section class="article_sub-section">
           <h4 class="article_sub-title">02 情報の関係性を表す</h4>
           <p class="article_sentence">ブロックはドラッグ＆ドロップで簡単に並べ替えることができます。整列させることで「並列関係」、入れ子にすることで「親子関係」など情報の構造が一目で分かるようになります。</p>
           <p class="article_img-wrapper">
-            <img class="article_img" src="assets/img/design02.png" alt="">
+            <img width="240" class="article_img" src="assets/img/ux-flow02.svg" alt="">
           </p>
         </section>
         <section class="article_sub-section">
           <h4 class="article_sub-title">03 デザインする</h4>
           <p class="article_sentence">余白や文字サイズ、色を調整することでよりノートを見やすく直感的にわかりやすくします。</p>
           <p class="article_img-wrapper">
-            <img class="article_img" src="assets/img/design03.png" alt="">
+            <img width="240" class="article_img" src="assets/img/ux-flow03.svg" alt="">
           </p>
         </section>
         <section class="article_sub-section">
           <h4 class="article_sub-title">04 全体を俯瞰する</h4>
           <p class="article_sentence">全体を見渡すことで、情報のまとまりや関連性、優先順位などを直感的・体系的に理解することができます。</p>
           <p class="article_img-wrapper">
-            <img class="article_img" src="assets/img/design04.png" alt="">
+            <img width="240" class="article_img" src="assets/img/ux-flow04.svg" alt="">
           </p>
         </section>
       </section>

@@ -53,9 +53,9 @@
       </li>
       <li class="work-container">
         <a href="./coveat/">
-          <img class="work-img" src="assets/img/coveat.jpg" alt="">
+          <img class="work-img" src="assets/img/coveat.png" alt="">
           <div>
-            <h2 class="work-title">coveat</h2>
+            <h2 class="work-title">covEAT</h2>
             <h3 class="work-genre">UIdesign サービスデザイン コーディング</h3>
           </div>
         </a>
@@ -78,7 +78,16 @@
           </div>
         </a>
       </li>
-</ol>
+      <li class="work-container">
+        <a href="./kosuzume/">
+          <img class="work-img" src="assets/img/kosuzume.jpg" alt="">
+          <div>
+            <h2 class="work-title">kosuzume</h2>
+            <h3 class="work-genre">グラフィック</h3>
+          </div>
+        </a>
+      </li>
+    </ol>
 	</main>
 	<footer></footer>
 	<script>

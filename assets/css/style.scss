@@ -35,7 +35,7 @@
 			right: 0;
 			width: 70%;
 			height: 60vh;
-			z-index: 0;
+			z-index: -1;
 			border: none;
 			overflow: hidden;
 			@media (max-width: $breakpoints_m){
@@ -89,26 +89,26 @@
 
 .top_btn{
   &_primary{
-    background: $primary-yellow;
-    display: flex;
-    align-items: center;
-    padding: 12px 24px;
-    border-radius: 4px;
-    margin: auto;
-    &_text{
-      color: $primary-navy;
-    }
-    &:hover{
-      background-color: $primary-yellow_hover;
-    }
+  background: $primary-yellow;
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  border-radius: 4px;
+  margin: auto;
+  &_text{
+    color: $primary-navy;
+  }
+  &:hover{
+    background-color: $primary-yellow_hover;
+  }
   }
   &-text_primary{
+  font-size: $btn-size;
+  font-family: $font-jp_standard;
+  font-weight: bold;
+  @media (max-width: $breakpoints_m){
     font-size: $btn-size;
-    font-family: $font-jp_standard;
-    font-weight: bold;
-    @media (max-width: $breakpoints_m){
-      font-size: $btn-size;
-    }
+  }
   }
 }
 
@@ -121,18 +121,18 @@
   background-color: $primary-yellow;
 	width: fit-content;
   &:hover{
-    background-color: $primary-yellow_hover;
-    color: $white;
+  background-color: $primary-yellow_hover;
+  color: $white;
   }
   &_text{
-    font-size: $text-size;
-    font-family: $font-jp_standard;
-    font-weight: bold;
+  font-size: $text-size;
+  font-family: $font-jp_standard;
+  font-weight: bold;
   }
   &_icon{
-    width: 24px;
-    height: 24px;
-    margin-right: 4px;
+  width: 24px;
+  height: 24px;
+  margin-right: 4px;
   }
 }
 
@@ -140,13 +140,13 @@
   margin-bottom: 160px;
   width: 100%;
   @media (max-width: $breakpoints_l){
-      margin-bottom: 120px;
+    margin-bottom: 120px;
   }
   @media (max-width: $breakpoints_m){
-      margin-bottom: 100px;
+    margin-bottom: 100px;
   }
   @media (max-width: $breakpoints_l){
-      margin-bottom: 80px;
+    margin-bottom: 80px;
   }
 }
 
@@ -154,15 +154,15 @@
   margin-bottom: 160px;
   width: 100%;
   @media (max-width: $breakpoints_l){
-    margin-bottom: 120px;
+  margin-bottom: 120px;
   }
   @media (max-width: $breakpoints_m){
-    margin-bottom: 100px;
-    padding: 0 16px 80px 16px;
-    box-sizing: border-box;
+  margin-bottom: 100px;
+  padding: 0 16px 80px 16px;
+  box-sizing: border-box;
   }
   @media (max-width: $breakpoints_s){
-    margin-bottom: 80px;
+  margin-bottom: 80px;
   }
 }
 
@@ -173,136 +173,139 @@
   color: $black;
   font-family: $font-en_standard;
   @media (max-width: $breakpoints_m){
-    font-size: $display2-size;
-    margin-bottom: 40px;
+  font-size: $display2-size;
+  margin-bottom: 40px;
   }
   @media (max-width: $breakpoints_s){
-    font-size: $display1-size;
-    margin-bottom: 24px;
+  font-size: $display1-size;
+  margin-bottom: 24px;
   }
 }
 
 .top-works{
   margin-bottom: 160px;
   @media (max-width: $breakpoints_l){
-    margin-bottom: 80px;
+  margin-bottom: 80px;
   }
   @media (max-width: $breakpoints_s){
-    margin-bottom: 60px;
+  margin-bottom: 60px;
   }
   &_card {
-    position: relative;
-    max-width: 640px;
-    margin: 0 auto;
-    display: flex;
-    &:not(:last-child) {
-      margin-bottom: 120px;
-    }
-    @media (max-width: 1360px){
-      flex-direction: column;
-    }
+  position: relative;
+  max-width: 1048px;
+  margin: 0 auto;
+  display: flex;
+  &:not(:last-child) {
+    margin-bottom: 120px;
+  }
+  @media (max-width: 1360px){
+    flex-direction: column;
+  }
   }
   &_img-wrapper{
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    margin-right: 44px;
-    @media (max-width: 1360px){
-      margin: 0 auto 40px auto;
-    }
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-right: 44px;
+  @media (max-width: 1360px){
+    margin: 0 auto 40px auto;
+  }
   }
   &_img{
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
   }
   &_contents{
-    max-width: 100%;
-    @media (max-width: 1360px){
-      margin: auto
-    }
+  max-width: 100%;
+  @media (max-width: 1360px){
+    margin: auto
+  }
   }
   &_title-box{
-    max-width: 100%;
+  max-width: 100%;
   }
   &_title{
-    display: inline-block;
-    font-size: $heading-size;
-    font-family: $font-en_standard;
-    font-weight: bold;
-    background-color: $background-color;
-    padding: 4px 10px 0 10px;
-    margin-bottom: 8px;
-    &.jp{
-      font-family: $font-jp_standard;
-    }
-    @media (max-width: $breakpoints_m){
-      font-size: $title-size;
-      margin-bottom: 0;
-    }
+  display: inline-block;
+  font-size: $heading-size;
+  font-family: $font-en_standard;
+  font-weight: bold;
+  background-color: $background-color;
+  padding: 4px 10px 0 10px;
+  margin-bottom: 8px;
+  &.jp{
+    font-family: $font-jp_standard;
+  }
+  @media (max-width: $breakpoints_m){
+    font-size: $title-size;
+    margin-bottom: 0;
+  }
   }
   &_genre{
-    display: flex;
-    padding-left: 4px;
-    margin-bottom: 12px;
-    @media (max-width: $breakpoints_m){
-      padding-left: 8px;
-    }
+  display: flex;
+  padding-left: 4px;
+  margin-bottom: 12px;
+  @media (max-width: $breakpoints_m){
+    padding-left: 8px;
+  }
   }
   &_genre-option{
-    color: $text-dark;
-    display: inline-block;
-    font-size: $caption-size;
-    font-family: $font-en_standard;
-    font-weight: bold;
-    padding: 2px 8px 0 8px;
-    background-color: $background-color;
-    margin-right: 0;
-    @media (max-width: $breakpoints_m){
-      padding: 2px 2px 0 2px;
-    }
+  color: $text-dark;
+  display: inline-block;
+  font-size: $caption-size;
+  font-family: $font-en_standard;
+  font-weight: bold;
+  padding: 2px 8px 0 8px;
+  background-color: $background-color;
+  margin-right: 0;
+  @media (max-width: $breakpoints_m){
+    padding: 2px 2px 0 2px;
+  }
   }
   &_summary{
-    background-color: $bg-gray;
-    box-sizing: border-box;
-    padding: 24px 32px 32px 32px;
-    width: fit-content;
-    max-width: 100%;
+  background-color: $bg-gray;
+  box-sizing: border-box;
+  padding: 24px 32px 32px 32px;
+  width: fit-content;
+  max-width: 100%;
   }
   &_concept{
-    display: inline-block;
-    font-family: $font-jp_standard;
-    font-size: $subheading-size;
-    font-weight: bold;
-    margin-bottom: 8px;
-    @media (max-width: $breakpoints_m){
-      font-size: $title-size;
-    }
+  display: inline-block;
+  font-family: $font-jp_standard;
+  font-size: $subheading-size;
+  font-weight: bold;
+  margin-bottom: 8px;
+  @media (max-width: $breakpoints_m){
+    font-size: $title-size;
+  }
   }
   &_explication{
-    max-width: 540px;
-    margin-bottom: 24px;
-    @media (max-width: $breakpoints_s){
-      max-width: 100%;
-      font-size: $caption-size;
-      margin-bottom: 16px;
-    }
+  max-width: 540px;
+  margin-bottom: 24px;
+  @media (max-width: $breakpoints_s){
+    max-width: 100%;
+    font-size: $caption-size;
+    margin-bottom: 16px;
+  }
   }
   &_btn{
-    margin: 0 0 0 auto;
+  margin: 0 0 0 auto;
   }
 }
 .work-more-btn.normal-btn{
   @media (max-width: 1360px){
-    margin: auto;
+  margin: auto;
   }
 }
 
 .about{
   &_contents{
-    width: 760px;
+    width: 720px;
     max-width: 100%;
-    margin: auto;
-    margin-bottom: 160px;
+    margin: 0 auto 160px;
+    @media (max-width: 1080px){
+      flex-direction: column;
+      width: 604px;
+    }
   }
   &_profile{
     display: flex;
@@ -315,9 +318,8 @@
   &_profile-box{
     margin-right: 64px;
     @media (max-width: 1080px){
-      margin: 0 auto 64px auto;
-      width: 340px;
-      max-width: 100%;
+      margin-bottom: 64px;
+      margin-right: 0;
     }
   }
   &_name{
@@ -326,153 +328,149 @@
     margin-bottom: 8px;
   }
   &_career{
-    padding: 12px 24px;
-    background-color: $bg-gray;
-    margin-bottom: 32px;
-    box-sizing: border-box;
-    width: 340px;
-    max-width: 100%;
+  padding: 12px 24px;
+  background-color: $bg-gray;
+  margin-bottom: 32px;
+  box-sizing: border-box;
   }
   &_career-option{
-    font-size: $caption-size;
+  font-size: $caption-size;
   }
   &_sentence{
-    margin-bottom: 32px;
-    width: 22em;
-    max-width: 100%;
-    @media (max-width: 1080px){
-      margin-bottom: 24px;
-    }
-  }
-  &_img-box{
-    @media (max-width: 1080px){
-      width: 360px;
-      max-width: 100%;
-      margin: 0 auto 40px auto;
-    }
-  }
-  &_img-container{
-    width: 360px;
-    max-width: 100%;
-    height: auto;
+  margin-bottom: 32px;
+  width: 22em;
+  max-width: 100%;
+  @media (max-width: 1080px){
     margin-bottom: 24px;
   }
+  }
+  &_img-box{
+  @media (max-width: 1080px){
+    width: 604px;
+    max-width: 100%;
+    margin: 0 auto 40px auto;
+  }
+  }
+  &_img-container{
+  height: auto;
+  margin-bottom: 24px;
+  }
   &_img{
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
   }
   &_like-list{
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
   }
   &_like-option{
-    padding: 4px 8px;
-    margin-bottom: 12px;
-    margin-right: 16px;
-    background-color: #D4D9DB;
-    font-size: $caption-size;
-    font-weight: bold;
+  padding: 4px 8px;
+  margin-bottom: 12px;
+  margin-right: 16px;
+  background-color: #D4D9DB;
+  font-size: $caption-size;
+  font-weight: bold;
   }
   &_want-to-do{
-    margin-bottom: 120px;
-    @media (max-width: $breakpoints_m){
-      max-width: 480px;
-      margin: 0 auto 40px auto;
-    }
+  margin-bottom: 120px;
+  @media (max-width: $breakpoints_m){
+    max-width: 480px;
+    margin: 0 auto 40px auto;
+  }
   }
   &_doing{
-    @media (max-width: $breakpoints_m){
-      max-width: 480px;
-      margin: 0 auto;
-    }
+  @media (max-width: $breakpoints_m){
+    max-width: 480px;
+    margin: 0 auto;
+  }
   }
   &_subtitle{
-    font-size: $subheading-size;
-    margin-bottom: 40px;
-    @media (max-width: $breakpoints_m){
-      margin-bottom: 24px;
-    }
+  font-size: $subheading-size;
+  margin-bottom: 40px;
+  @media (max-width: $breakpoints_m){
+    margin-bottom: 24px;
+  }
   }
 }
 
 .want-to-do{
   &_vision{
-    margin-bottom: 40px;
+  margin-bottom: 40px;
   }
   &_text{
-    font-size: $title-size;
-    font-weight: bold;
-    margin-bottom: 24px;
-    @media (max-width: $breakpoints_m){
-      margin-bottom: 8px;
-    }
-    @media (max-width: $breakpoints_s){
-      font-size: $text-size;
-    }
+  font-size: $title-size;
+  font-weight: bold;
+  margin-bottom: 24px;
+  @media (max-width: $breakpoints_m){
+    margin-bottom: 8px;
+  }
+  @media (max-width: $breakpoints_s){
+    font-size: $text-size;
+  }
   }
   &_callout{
-    font-size: $subheading-size;
-    font-weight: bold;
-    display: inline;
-    background: linear-gradient(transparent 60%, $primary-yellow 60%);
-    margin-bottom: 16px;
-    @media (max-width: $breakpoints_s){
-      font-size: $text-size;
-    }
+  font-size: $subheading-size;
+  font-weight: bold;
+  display: inline;
+  background: linear-gradient(transparent 60%, $primary-yellow 60%);
+  margin-bottom: 16px;
+  @media (max-width: $breakpoints_s){
+    font-size: $text-size;
+  }
   }
   &_ex{
-    background-color: $bg-gray;
-    padding: 40px 80px;
-    @media (max-width: $breakpoints_m){
-      padding: 16px 28px;
-    }
+  background-color: $bg-gray;
+  padding: 40px 80px;
+  @media (max-width: $breakpoints_m){
+    padding: 16px 28px;
+  }
   }
 }
 
 .doing{
   &_box{
-    padding: 40px 80px;
-    background-color: $bg-gray;
-    @media (max-width: $breakpoints_m){
-      padding: 16px 28px;
-    }
+  padding: 40px 80px;
+  background-color: $bg-gray;
+  @media (max-width: $breakpoints_m){
+    padding: 16px 28px;
+  }
   }
   &_option{
-    display: flex;
-    margin-bottom: 40px;
+  display: flex;
+  margin-bottom: 40px;
   }
   &_option_img{
-    width: 48px;
-    height: 48px;
-    margin-right: 40px;
-    @media (max-width: $breakpoints_m){
-      margin-right: 8px;
-    }
+  width: 48px;
+  height: 48px;
+  margin-right: 40px;
+  @media (max-width: $breakpoints_m){
+    margin-right: 8px;
+  }
   }
   &_option_title{
-    font-size: $title-size;
-    font-weight: bold;
-    margin-top: 4px;
-    margin-bottom: 8px;
+  font-size: $title-size;
+  font-weight: bold;
+  margin-top: 4px;
+  margin-bottom: 8px;
   }
   &_option_sentence{
-    margin-bottom: 8px;
+  margin-bottom: 8px;
   }
 }
 
 .top-contact{
   &_caption{
-    text-align: center;
-    margin: 0 auto 40px auto;
+  text-align: center;
+  margin: 0 auto 40px auto;
   }
   &_link{
-    text-decoration: underline;
+  text-decoration: underline;
   }
   &_mail-address{
-    font-weight: bold;
-    font-size: $title-size;
-    font-family: $font-en_standard;
-    text-align: center;
-    margin: 0 auto 40px auto;
+  font-weight: bold;
+  font-size: $title-size;
+  font-family: $font-en_standard;
+  text-align: center;
+  margin: 0 auto 40px auto;
   }
 }

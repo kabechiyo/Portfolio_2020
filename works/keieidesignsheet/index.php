@@ -41,7 +41,9 @@
       <!-- 説明文 -->
       <section class="header_info-container">
         <h2 class="header_concept">経営理解を深めるフレームワーク</h2>
-        <p class="header_sentence">経営デザインシートは、会社や事業の存在意義を意識した上で、将来を構想するためのフレームワークです。内閣府主催の<a href="https://www.kantei.go.jp/jp/singi/titeki2/keiei_design/redesign/redesign.html">「経営デザインシート リデザインコンペティション」</a>に応募し、準大賞を受賞しました。既存のフレームワークの魅力を整理した上で課題点を克服し、より使いやすい形にアップデートを行っています。</p>
+        <p class="header_sentence">経営デザインシートは、会社や事業の存在意義を意識した上で、将来を構想するためのフレームワークです。
+          内閣府主催の<a href="https://www.kantei.go.jp/jp/singi/titeki2/keiei_design/redesign/redesign.html">「経営デザインシート リデザインコンペティション」</a>に応募し、準大賞を受賞しました。
+          既存のフレームワークの魅力を整理した上で課題点を克服し、より使いやすい形にアップデートを行っています。</p>
       </section>
     </section>
   </header>
@@ -131,9 +133,9 @@
             <li class="article_5w1h-option who">経営や事業、組織の一員が</li>
             <li class="article_5w1h-option when">事業の継承や新規立案、将来の構想をする時に</li>
             <li class="article_5w1h-option where">会社の会議室などで</li>
-            <li class="article_5w1h-option why"><span class="article_text_highlight">事業の強みを明確にし、発展させていく</span>ために</li>
-            <li class="article_5w1h-option how"><span class="article_text_highlight">過去・現在・未来の視点でビジネスを捉える</span>ことで</li>
-            <li class="article_5w1h-option what"><span class="article_text_highlight">事業の向かう方向とその為にやるべきことを把握する</span>フレームワーク</li>
+            <li class="article_5w1h-option why">事業の強みを明確にし、発展させていくために</li>
+            <li class="article_5w1h-option how">過去・現在・未来の視点でビジネスを捉えることで</li>
+            <li class="article_5w1h-option what">事業の向かう方向とその為にやるべきことを把握するフレームワーク</li>
           </ol>
         </section>
         <section class="article_sub-section">

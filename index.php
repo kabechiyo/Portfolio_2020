@@ -1,89 +1,94 @@
 <!DOCTYPE html>
 <html lang="jp">
-  <head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="ie=edge" http-equiv="X-UA-Compatible">
-    <meta content="相澤春伽のポートフォリオサイトです。" name="descripton">
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/js/loading.js"></script>
-    <script type="text/javascript" src="assets/js/rellax.min.js"></script>
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-    <link href="assets/img/favicons/favicon.ico" rel="icon" type="image/x-icon">
-    <link href="assets/img/favicons/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
-    <?php include('setting.php'); ?>
-    <title>aizawa design</title>
-  </head>
-  <body>
-    <?php include('loading.php'); ?>
-    <header>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <meta content="相澤春伽のポートフォリオサイトです。" name="description">
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/loading.js"></script>
+  <script type="text/javascript" src="assets/js/rellax.min.js"></script>
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+  <link href="assets/img/favicons/favicon.ico" rel="icon" type="image/x-icon">
+  <link href="assets/img/favicons/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
+  <?php include('setting.php'); ?>
+  <title>aizawa design</title>
+</head>
+
+<body>
+  <?php include('loading.php'); ?>
+  <header>
+    <section class="top-header">
+      <h1 class="top-header_title">Portfolio by Shunka Aizawa</h1>
+      <h2 class="top-header_subtitle">Design with purpose</h2>
       <div class="top-header_background">
-        <iframe class="top-header_background-container" alt="" src="https://editor.p5js.org/aizawa213/full/ZfkDPDF7l"></iframe>
+        <iframe class="top-header_background-container" alt=""
+          src="https://editor.p5js.org/aizawa213/full/ZfkDPDF7l"></iframe>
       </div>
-      <section class="top-header">
-        <h1 class="top-header_title">Portfolio by Shunka Aizawa</h1>
-        <h2 class="top-header_subtitle">Design with purpose</h2>
-      </section>
-      <?php include('nav.php'); ?>
-    </header>
-    <!-- メインコンテンツ -->
-    <main>
-      <!-- works -->
-      <section class="top-contents_section">
-        <a id="works" name="works"></a>
-        <div class="top-contents_title-container">
-          <h3 class="top-contents_title">works</h3>
-        </div>
-        <ul class="top-works">
-          <li class="top-works_card">
-            <p class="top-works_img-wrapper"><img alt="" class="top-works_img" src="assets/img/keieidesignsheet.jpg"></p>
-            <section class="top-works_contents">
-              <div class="top-works_title-box">
-                <h3 class="top-works_title jp">経営デザインシート</h3>
-                <ul class="top-works_genre">
-                  <li class="top-works_genre-option">図解</li>
-                  <li class="top-works_genre-option">フレームワーク</li>
-                </ul>
-              </div>
-              <section class="top-works_summary">
-                <h4 class="top-works_concept">経営理解を深めるフレームワーク</h4>
-                <p class="top-works_explication">経営デザインシートは、会社や事業の存在意義を意識した上で、将来を構想するためのフレームワークです。内閣府主催の「経営デザインシート リデザインコンペティション」に応募し、準大賞を受賞しました。既存のフレームワークの魅力を整理した上で課題点を克服し、より使いやすい形にアップデートを行っています。</p>
-                <button class="work-more-btn normal-btn" type="button" onclick="location.href='./works/keieidesignsheet'">
-                  <p class="normal-btn_text">もっと見る</p>
-                </button>
-              </section>
+    </section>
+    <?php include('nav.php'); ?>
+  </header>
+  <!-- メインコンテンツ -->
+  <main>
+    <!-- works -->
+    <section class="top-contents_section">
+      <a id="works" name="works"></a>
+      <div class="top-contents_title-container">
+        <h3 class="top-contents_title">works</h3>
+      </div>
+      <ul class="top-works">
+        <li class="top-works_card">
+          <p class="top-works_img-wrapper"><img alt="" class="top-works_img" src="assets/img/keieidesignsheet.jpg"></p>
+          <section class="top-works_contents">
+            <div class="top-works_title-box">
+              <h3 class="top-works_title jp">経営デザインシート</h3>
+              <ul class="top-works_genre">
+                <li class="top-works_genre-option">図解</li>
+                <li class="top-works_genre-option">フレームワーク</li>
+              </ul>
+            </div>
+            <section class="top-works_summary">
+              <h4 class="top-works_concept">経営理解を深めるフレームワーク</h4>
+              <p class="top-works_explication">経営デザインシートは、会社や事業の存在意義を意識した上で、将来を構想するためのフレームワークです。内閣府主催の「経営デザインシート
+                リデザインコンペティション」に応募し、準大賞を受賞しました。既存のフレームワークの魅力を整理した上で課題点を克服し、より使いやすい形にアップデートを行っています。</p>
+              <button class="work-more-btn normal-btn" type="button" onclick="location.href='./works/keieidesignsheet/'">
+                <p class="normal-btn_text">もっと見る</p>
+              </button>
             </section>
-          </li>
-          <li class="top-works_card">
-            <p class="top-works_img-wrapper"><img alt="" class="top-works_img" src="assets/img/stockroom.jpg"></p>
-            <section class="top-works_contents">
-              <div class="top-works_title-box">
-                <h3 class="top-works_title">STOCKROOM</h3>
-                <ul class="top-works_genre">
-                  <li class="top-works_genre-option">UI Design</li>
-                  <li class="top-works_genre-option">Service Design</li>
-                </ul>
-              </div>
-              <section class="top-works_summary">
-                <h4 class="top-works_concept">ひらめきを一元化するネタ帳アプリ</h4>
-                <p class="top-works_explication">STOCKROOMは様々なアイデアを一元化して保存するためのネタ帳アプリです。様々な場面で企画やアイデア出しを行う中で議事録やノートツール、メモ帳に思いついたものが散乱してしまうのを課題に感じていました。そこで、「ひらめき」を一元化できるネタ帳アプリを考案し制作を行いました。</p>
-                <button class="normal-btn work-more-btn" type="button" onclick="location.href='./works/stockroom'">
-                  <p class="normal-btn_text">もっと見る</p>
-                </button>
-              </section>
+          </section>
+        </li>
+        <li class="top-works_card">
+          <p class="top-works_img-wrapper"><img alt="" class="top-works_img" src="assets/img/stockroom.jpg"></p>
+          <section class="top-works_contents">
+            <div class="top-works_title-box">
+              <h3 class="top-works_title">STOCKROOM</h3>
+              <ul class="top-works_genre">
+                <li class="top-works_genre-option">UI Design</li>
+                <li class="top-works_genre-option">Service Design</li>
+              </ul>
+            </div>
+            <section class="top-works_summary">
+              <h4 class="top-works_concept">ひらめきを一元化するネタ帳アプリ</h4>
+              <p class="top-works_explication">
+                STOCKROOMは様々なアイデアを一元化して保存するためのネタ帳アプリです。様々な場面で企画やアイデア出しを行う中で議事録やノートツール、メモ帳に思いついたものが散乱してしまうのを課題に感じていました。そこで、「ひらめき」を一元化できるネタ帳アプリを考案し制作を行いました。
+              </p>
+              <button class="normal-btn work-more-btn" type="button" onclick="location.href='./works/stockroom/'">
+                <p class="normal-btn_text">もっと見る</p>
+              </button>
             </section>
-          </li>
-        </ul>
-        <!-- 作品一覧ページ -->
-        <!-- <p class="top_btn_wrapper">
-          <button class="top_btn_primary" type="button" onclick="location.href='./works'">
-            <p class="top_btn-text_primary">全ての作品を見る</p>
+          </section>
+        </li>
+        <li class="top_btn_wrapper">
+          <button class="top_btn_primary" type="button" onclick="location.href='./works/'">
+            <span class="top_btn-text_primary">全ての作品を見る</span>
           </button>
-          </p> -->
-      </section>
-      <!-- about -->
-      <section class="top-contents_section">
+        </li>
+      </ul>
+    </section>
+    <!-- about -->
+    <section class="top-contents_section">
       <a id="about" name="about">
         <div class="top-contents_title-container">
           <h3 class="top-contents_title">about</h3>
@@ -177,15 +182,17 @@
         </p>
         <p class="top-contact_mail-address">aizawadesign13@gmail.com</p>
         <address class="top-contact_mail">
-          <button class="top_btn_primary" type="button" onclick="location.href='mailto:aizawadesign13@gmail.com'" title="クリックするとメールソフトを起動します。">
+          <button class="top_btn_primary" type="button" onclick="location.href='mailto:aizawadesign13@gmail.com'"
+            title="クリックするとメールソフトを起動します。">
             <p class="top_btn-text_primary">Tap to send Mail</p>
           </button>
         </address>
       </section>
-    </main>
-    <!-- <footer></footer> -->
-    <script>
-      feather.replace()
-    </script>
-  </body>
+  </main>
+  <!-- <footer></footer> -->
+  <script>
+  feather.replace()
+  </script>
+</body>
+
 </html>

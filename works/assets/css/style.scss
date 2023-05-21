@@ -6,46 +6,48 @@ main{
     margin-top: 120px;
   }
 }
+
 .allworks_refine{
   &_container{
-    width: calc(80% + 80px);
-    margin: 0 auto 80px auto;
-    display: flex;
-    @media (max-width: 1200px){
-      width: 80%;
-    }
-    @media (max-width: $breakpoints_s){
-      font-size: $caption-size;
-      padding-top: 40px;
-    }
+  width: calc(80% + 80px);
+  margin: 0 auto 80px auto;
+  display: flex;
+  @media (max-width: 1200px){
+    width: 80%;
+  }
+  @media (max-width: $breakpoints_s){
+    font-size: $caption-size;
+    padding-top: 40px;
+  }
   }
   &_option{
-    font-size: $text-size;
-    font-family: $font-en_standard;
-    color: $black;
-    cursor: pointer;
-    &:hover{
-      background-color: $primary-yellow;
+  font-size: $text-size;
+  font-family: $font-en_standard;
+  color: $black;
+  cursor: pointer;
+  &:hover{
+    background-color: $primary-yellow;
+  }
+  &:not(:last-child){
+    margin-right: 24px;
+    @media (max-width: $breakpoints_s){
+    margin-right: 16px;
     }
-    &:not(:last-child){
-      margin-right: 24px;
-      @media (max-width: $breakpoints_s){
-        margin-right: 16px;
-      }
-    }
-    &.selected{
-      border-bottom: solid $primary-yellow 2px;
-    }
+  }
+  &.selected{
+    border-bottom: solid $primary-yellow 2px;
+  }
   }
 }
 .all-work_container{
   margin: 0 auto;
+  padding: 0;
   display: grid;
   width: 80%;
   grid-template-columns: 1fr 1fr;
   @media (max-width: 1200px){
-    grid-template-columns: 1fr;
-    transition-duration: 0.3s;
+  grid-template-columns: 1fr;
+  transition-duration: 0.3s;
   }
   column-gap: 80px;
   justify-content: center;
@@ -55,50 +57,50 @@ main{
 }
 .work{
   &-container{
-    width:  100%;
-    margin: 0 auto;
+  width:  100%;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  @media (max-width: $breakpoints_m){
+    width: 100%;
+    margin: 0;
     margin-bottom: 80px;
-    @media (max-width: $breakpoints_m){
-      width: 100%;
-      margin: 0;
-      margin-bottom: 80px;
-    }
-    @media (max-width: $breakpoints_s){
-      margin-bottom: 40px;
-    }
+  }
+  @media (max-width: $breakpoints_s){
+    margin-bottom: 40px;
+  }
   }
   &-img{
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  &:hover{
+    filter: brightness(80%);
+  }
+  &_container{
+    position: relative;
     width: 100%;
     height: auto;
-    cursor: pointer;
-    &:hover{
-      filter: brightness(80%);
-    }
-    &_container{
-      position: relative;
-      width: 100%;
-      height: auto;
-    }
+  }
   }
   &-title{
-    font-family: $font-en_standard;
+  font-family: $font-en_standard;
+  font-size: $title-size;
+  font-weight: bold;
+  @media (max-width: $breakpoints_s){
+    font-size: $subheading-size;
+  }
+  &_jp{
+    font-family: $font-jp_decoration;
     font-size: $title-size;
-    font-weight: bold;
     @media (max-width: $breakpoints_s){
-      font-size: $subheading-size;
-    }
-    &_jp{
-      font-family: $font-jp_decoration;
-      font-size: $title-size;
-      @media (max-width: $breakpoints_s){
-        font-size: $subheading-size;
-      }
+    font-size: $subheading-size;
     }
   }
+  }
   &-genre{
-    font-size: $text-size;
-    @media (max-width: $breakpoints_s){
-      font-size: $caption-size;
-    }
+  font-size: $text-size;
+  @media (max-width: $breakpoints_s){
+    font-size: $caption-size;
+  }
   }
 }

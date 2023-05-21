@@ -144,10 +144,6 @@ a:active {
   color: #333;
 }
 
-header {
-  width: 100%;
-}
-
 .global-nav {
   z-index: 1000;
   position: fixed;
@@ -155,8 +151,7 @@ header {
   left: 0;
   width: 140px;
   height: 100vh;
-  background-color: #fff;
-  border-right: #ECBE56 4px solid;
+  background-color: #f4f4f4;
   transition: all 200ms 0s ease;
   padding-left: 16px;
   padding-top: 32px;
@@ -167,8 +162,6 @@ header {
     height: 60px;
     box-sizing: border-box;
     padding: 4px 20px 0 20px;
-    border-right: none;
-    border-bottom: #ECBE56 4px solid;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -190,11 +183,14 @@ header {
   }
 }
 .global-nav_link-top-container {
+  display: flex;
   padding-left: 12px;
+  gap: 16px;
+  flex-direction: column;
 }
 @media (max-width: 894px) {
   .global-nav_link-top-container {
-    display: flex;
+    flex-direction: row;
     margin: auto 0;
   }
 }

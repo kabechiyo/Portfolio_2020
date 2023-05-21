@@ -38,12 +38,12 @@ $spacer_s: 24px;
   display: flex;
   align-items: center;
   &::before{
-    content: "";
-    width: 16px;
-    height: 16px;
-    margin-right: 8px;
-    background-color: $work-color;
-    border-radius: 16px;
+  content: "";
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  background-color: $work-color;
+  border-radius: 16px;
   }
 }
 // 文章
@@ -52,6 +52,9 @@ $spacer_s: 24px;
   font-size: $text-size;
   line-height: 1.7;
   margin-bottom: $spacer_m;
+  p + p{
+  margin-top: 8px;
+  }
 }
 .article_sentence_bold{
   font-weight: bold;
@@ -80,17 +83,17 @@ $spacer_s: 24px;
   padding: 4px 16px;
   border-radius: 4px;
   &:hover{
-    background-color: $work-color_hover;
+  background-color: $work-color_hover;
   }
   &:focus{
-    transition-delay: 0;
-    transition-duration: 0;
-    border: $black 2px solid;
+  transition-delay: 0;
+  transition-duration: 0;
+  border: $black 2px solid;
   }
   &:active{
-    transition-delay: 0;
-    transition-duration: 0;
-    border: $black 4px solid;
+  transition-delay: 0;
+  transition-duration: 0;
+  border: $black 4px solid;
   }
 }
 .article_hug-btn-icon{
@@ -123,7 +126,7 @@ $spacer_s: 24px;
 }
 // 5w1hリスト
 .article_5w1h-list{
-  padding: 0 0 0 16px;
+  padding: 0;
   margin-bottom: $spacer_m;
   display: flex;
   align-items: flex-start;
@@ -137,40 +140,40 @@ $spacer_s: 24px;
   margin-bottom: 8px;
   text-align: center;
   &::before{
-    font-size: $caption-size_en;
-    font-weight: bold;
-    color: $text-dark;
-    padding-top: 1px;
-    width: 64px;
+  font-size: $caption-size_en;
+  font-weight: bold;
+  color: $text-dark;
+  padding-top: 1px;
+  width: 64px;
   }
   &.what{
-    &::before{
-      content: "What";
-    }
+  &::before{
+    content: "What";
+  }
   }
   &.when{
-    &::before{
-      content: "When";
-    }
+  &::before{
+    content: "When";
+  }
   }
   &.where{
-    &::before{
-      content: "Where";
-    }
+  &::before{
+    content: "Where";
+  }
   }
   &.why{
-    &::before{
-      content: "Why";
-    }
+  &::before{
+    content: "Why";
+  }
   }
   &.who{
-    &::before{
-      content: "Who";
-    }
+  &::before{
+    content: "Who";
+  }
   }
   &.how{
-    &::before{
-      content: "How";
-    }
+  &::before{
+    content: "How";
+  }
   }
 }

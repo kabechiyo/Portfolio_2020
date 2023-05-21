@@ -11,7 +11,7 @@
       <a class="global-nav_link" href="http://localhost:3000#about">about</a>
     </li>
     <li>
-      <a class="global-nav_link" href="http://localhost:3000#about">contact</a>
+      <a class="global-nav_link" href="http://localhost:3000#contact">contact</a>
     </li>
   </ul>
 </nav>
